@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Times, serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    margin: 0;
+}
+
+.card {
+    border-radius: 0;
+}
+
+
+
+.btn-g {
+
+    background-color: #303132;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    height: auto;
+    border-radius: 0;
+    transition: all 550ms;
+    border: none;
+}
+
+.btn-g:hover {
+    background-color: #fff;
+    color: #303132;
+    transition: all 250ms ease-in-out;
+}
+
+.titulos {
+    font-family: Merriweather;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bars__menu {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    transform: translate(-50%, -50%) sacale(6);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 6px;
+    transition: all 600ms;
+    transform-origin: 0px 100%;
+}
+
+.activeline1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.menu__active .nav {
+    right: 0;
+}
+
+.menu nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -700px;
+    background-color: #d3d3d3;
+    width: 80%;
+    height: 100vh;
+    padding: 60px 25px 10px 10px;
+    z-index: 1;
+    transition: all 900ms;
+    justify-content: flex-end;
+}
+
+.menu ul {
+    flex-direction: column;
+    text-align: right;
+    font-size: 16px;
+    padding-top: 40px;
+}
+
+.menu ul li {
+    margin-left: 0px;
+    list-style: none;
+    margin: 35% 0% 20% 0%;
+    border: 1px solid #fff;
+    border-style: none none solid none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1D1D36;
+}
+
+.inicio-sesion a i {
+    padding-right: 5px;
+}
+
+#selected {
+    color: #ad8c91;
+}
+
+#header-resposive {
+    height: 90px;
+    background-color: #535151;
+}
+
+#header-resposive .header_c {
+    display: none;
+}
+
+.cont-img {
+    display: flex;
+    justify-content: center;
+}
+
+#header-resposive .menu_c nav ul li a:hover {
+    color: #ecab0f;
+    transition: all 6s ease-out;
+}
+
+
+.cont-img img {
+    width: 200px;
+    height: 88px;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+}
+#banner .back-montion {
+    width: 100%;
+    height: 380px;
+    background: url(https://cdn.koaj.co/img/external_libraries_loader/Home2024/Junio/07/Banner0001_desktop.webp); 
+    /* background: url(../img/banner.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    padding-bottom: 6%;
+    max-width: 600px;
+}
+
+#banner .cont-banner {
+    width: 80%;
+    height: 65%;
+    background: #fff;
+    opacity: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+#banner .titulo-banner {
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: 3px;
+    padding: 20px 16px;
+}
+
+.boton {
+    position: absolute;
+    padding: 20px;
+    width: 60%;
+    font-weight: 500;
+    display: none;
+}
+
+.boton button {
+    width: 100%;
+}
+
+#Tienda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#Tienda .ev {
+    background-color: #E5E5E5;
+    font-size: 12px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+#Tienda .tienda {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 6px;
+    font-size: 14px;
+    width: 100%;
+    font-weight: 500;
+}
+
+
+#Tienda ul,
+li {
+    list-style: none;
+}
+
+#Tienda .container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+#Tienda .card {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#Tienda .intro {
+    position: absolute;
+    height: 0px;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    bottom: -25px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(27, 27, 27, .5);
+    transition: .4s ease-in-out;
+    opacity: 0.8;
+}
+
+#Tienda .card:hover .intro {
+    height: 50px;
+    bottom: 0;
+    background-color: #fff;
+}
+
+#Tienda .card:hover .text-p {
+    opacity: 1;
+    visibility: visible;
+}
+
+#Tienda .card:hover img {
+    transform: scale(1.5);
+}
+
+#Tienda img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 0px;
+    transition: transform .4s ease-in-out;
+    background: #d3d3d3;
+}
+
+#Tienda .text-p {
+    font-size: 16px;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#Tienda .intro a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#Tienda .footer-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Tienda .np {
+    width: 100%;
+    padding: 10px 20px;
+    font-family: 'poppins';
+}
+
+#Tienda .precio {
+    width: 100%;
+    padding: 0px 20px;
+    font-family: 'poppins';
+    padding-bottom: 5px;
+}
+
+#Tienda .container-card {
+    width: 200px;
+}
+
+#montion {
+    padding: 50px 0px;
+    background-color: #131311;
+}
+
+#montion .container-prime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#montion .titulo {
+    font-family: 'poppins';
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 15px 0px;
+    font-weight: 400;
+    color: black;
+}
+
+#montion .titulo h3 {
+    font-weight: 400;
+}
+
+#montion .cont {
+    font-family: 'poppins';
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    max-width: 620px;
+}
+
+
+#montion .boton-m button {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-family: 'poppins';
+    font-size: 1rem;
+}
+
+
+#montion .boton-m {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 10px 10px;
+
+}
+
+#montion .card-back {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#montion .card-back img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    filter: grayscale(100%);
+}
+
+#montion .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+    background-color: #fff;
+}
+
+#modelos .cont-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+#modelos .cont-text h3 {
+    width: 100%;
+    font-family: Merriweather;
+    padding: 20px 0px 0px 0px;
+    letter-spacing: 3px;
+}
+
+#modelos .cont-text b {
+    width: 100%;
+    text-align: center;
+    font-family: Merriweather;
+    padding: 0px 0px 20px 0px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+#modelos .cont-img {
+    height: 320px;
+    padding: 0px 12px;
+}
+
+#modelos .owl-carousel .owl-item img {
+    height: 100%;
+}
+
+#modelos .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 20px;
+}
+
+#admin {
+    margin: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+
+#admin .card-back {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    background-color: #D3DEDF;
+    margin-top: 30px;
+
+}
+
+#admin .card-back img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+}
+
+#admin .card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0px 20px 20px 20px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#admin .container-prime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 700px;
+}
+
+#admin .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+#foter {
+    background: #303132;
+
+}
+
+#foter .container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#foter .redes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#foter .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 0px 0px;
+    font-family: 'poppins';
+    font-weight: 200;
+    font-size: 1.1rem;
+    color: #fff;
+    padding-bottom: 10px;
+
+}
+
+#foter .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+#foter .icons a {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 8px;
+    color: #fff;
+}
+
+#foter .boletin {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#foter .titulo-b {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 15px 0px;
+    font-weight: 200;
+}
+
+#foter .ayuda {
+    width: 100%;
+}
+
+#foter .boletin input {
+    width: 80%;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: #535151;
+    color: #fff;
+}
+
+#foter .boletin input:hover {
+    border: 1px solid #fff;
+}
+
+#foter .buton {
+    width: 80%;
+    height: 35px;
+}
+
+#foter .buton button {
+    width: 100%;
+    height: 100%;
+    background-color: #D3D3D3;
+    border: none;
+    font-weight: 200;
+}
+
+#foter .buton button:hover {
+    transition: all 500ms;
+    background-color: #fff;
+}
+
+#foter .ayuda {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#foter .ayuda .numero {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foter .ayuda .numero b {
+    font-weight: 200;
+}
+
+#foter .ayuda .correo a {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+#foter .container {
+    display: flex;
+    justify-content: center;
+}
+
+#foter .container b {
+    font-weight: 100;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0px 50px 0px;
+}
+
+#foter .boletin-i {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+
+#go .toTop {
+	border: none;
+	display: flex;
+	cursor: pointer;
+	transition: opacity 0.3s, transform 0.3s;
+	/* posición */
+	position: fixed; right: 1rem; bottom: 1rem; z-index: 9999;
+  }
+  #go .toTop:not(.is-visible) {
+	pointer-events: none;
+	opacity: 0;
+	transform: translateY(-2rem);
+  }
+  #go .toTop svg {
+	stroke-width: 3px;
+	stroke: currentColor;
+	fill: none;
+	width: 24px;
+  }
+  /* Personalizar */
+  #go .toTop {
+	background-color: #535151;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 0%;
+	padding: 0.75rem;
+	color: #fff;
+  }
+
+@media screen and (min-width:870px) {
+
+    #header-resposive {
+        height: 70px;
+    }
+
+    #header-resposive .header_c {
+        display: flex;
+        padding: 0px 20px 0px 20px;
+        justify-content: center;
+    }
+
+    #header-resposive .header_r {
+        display: none;
+    }
+
+    #header-resposive .comtainer-prime {
+        display: flex;
+        max-width: 1000px;
+    }
+
+    #header-resposive .logo {
+        width: 20%;
+        padding: 10px 0px 0px 25px;
+    }
+
+    #header-resposive .logo img {
+        width: 100%
+    }
+
+    #header-resposive .menu_c {
+        width: 120%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #header-resposive .menu_c nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    #header-resposive .menu_c nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-resposive .menu_c nav ul li {
+        padding: 10px 20px;
+    }
+
+    #header-resposive .menu_c nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    #banner .back-montion {
+        width: 100%;
+        background-position: center;
+    }
+
+    #banner .cont-banner {
+        width: 380px;
+        height: 200px;
+        background: #fff;
+        opacity: 60%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    .boton {
+        width: 250px;
+    }
+
+    #montion .card {
+        background-color: #fff;
+        position: absolute;
+        top: 1855px;
+        left: 42%;
+        padding: 20px 0px;
+        
+    }
+
+    #montion .container-prime {
+        height: 500px;
+    }
+
+    #montion .card-back {
+        position: absolute;
+        height: 320px;
+        right: 170px;
+        top: 1650px;
+    }
+
+    #admin .card-back {
+        margin-top: 0px;
+        height: 300px;
+    }
+
+    #admin .card {
+        margin: 0px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (min-width:920px) {
+
+    #montion .card-back {
+        right: 170px;
+        top: 1380px;
+    }
+
+    #montion .card {
+        top: 1480px;
+        left: 42%;
+    }
+
+    #modelos .cont-prime {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    #modelos .cont-caurusel {
+        display: flex;
+        justify-content: center;
+        max-width: 920px;
+    }
+    #modelos .cont-text b {
+        font-size: 1.5rem;
+    }
+
+    #admin .container-prime {
+        flex-wrap: nowrap;
+    }
+
+    #admin {
+        margin: 20px 0px 0px 0px;
+        padding: 0px 0px 30px 0px;
+    }
+
+    #foter {
+        display: flex;
+        justify-content: center;
+    }
+
+    #foter .redes {
+        width: 33.33%;
+        height: 150px;
+    }
+
+    #foter .boletin {
+        width: 33.33%;
+    }
+
+    #foter .ayuda {
+        width: 33.33%;
+        height: 150px;
+    }
+
+    #foter .icons {
+        font-size: 1.5rem;
+    }
+}
