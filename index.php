@@ -195,6 +195,122 @@
         </div>
 
     </section>
+
+    <section id="montion">
+        <div class="container-prime">
+
+            <div class="card-back">
+                <img src="recursos/img/montion-bg-2.jpg">
+            </div>
+
+            <div class="card">
+                <div class="titulo">
+                    <h3>Motion Wear</h3>
+                </div>
+
+                <div class="cont">
+                    <p>Marca creada con el fin de mostrar la diferente variedad en creación de estilos y poder
+                        estabilizarse
+                        en todo este movimiento cultural y amplio que es el Street Wear. </p>
+                </div>
+                <div class="boton-m">
+                    <button>Leer mas</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="modelos">
+
+        <div class="cont-prime">
+            <div class="cont-text">
+                <div class="titulo">
+                    <h3>Colecciones limitadas</h3>
+                </div>
+                <b>Montion Basics</b>
+            </div>
+
+            <div class="cont-caurusel">
+
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item">
+                        <div class="cont-img">
+                            <img src="recursos/img/2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- <div class="item">
+                        <div class="cont-img">
+                            <img src="recursos/img/3.jpg" alt="">
+                        </div>
+                    </div> -->
+
+                    <div class="item">
+                        <div class="cont-img">
+                            <img src="recursos/img/4.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="cont-img">
+                            <img src="recursos/img/5.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="cont-img">
+                            <img src="recursos/img/6.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- <div class="item">
+                        <div class="cont-img">
+                            <img src="recursos/img/7.jpg" alt="">
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="item">
+                        <div class="cont-img">
+                            <img src="recursos/img/8.jpg" alt="">
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="admin">
+
+        <div class="container-prime">
+
+            <div class="card-back">
+                <!-- <img src="recursos/img/oscar-rodriguez.png"> -->
+                <!-- <img src="recursos/img/oscar-ro-2.png" alt=""> -->
+                <img src="recursos/img/oc.jfif" alt="">
+            </div>
+
+            <div class="card">
+                <div class="titulo">
+                    <h3>Oscar rodríguez</h3>
+                </div>
+                <br>
+                <div class="cont">
+                    <p>Saca su idea de este movimiento dando una perspectiva distinta frente a lo que ya se conoce en
+                        Bogotá
+                        y sus referentes de la moda y el street wear, dando a conocer la marca Motion.</p>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
     
     <?php include ("plantilla/go.php") ?>
 
